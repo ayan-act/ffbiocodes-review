@@ -1,0 +1,660 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | FF Bio Code – How We Collect &amp; Protect Your Data</title>
+  <meta name="description" content="Read the FF Bio Code Privacy Policy to learn how we collect, use, and protect your information, including our use of cookies, Google AdSense, and Google Analytics.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy | FF Bio Code">
+  <meta property="og:description" content="Learn how FF Bio Code collects, uses, stores, and protects your information, including details on cookies, advertising, and analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ffbiocodes.com/privacy-policy/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Learn how FF Bio Code collects, uses, stores, and protects your information while you use our website.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:        #1a1b26;
+      --surface:   #1a1b26;
+      --card:      #1a1b26;
+      --border:    #252b3e;
+      --accent:    #6A79B8;
+      --accent2:   #9A7DD1;
+      --glow:      #5b6cb3;
+      --text:      #e8eaf0;
+      --muted:     #8a90a8;
+      --heading:   #ffffff;
+      --radius:    14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* ── HERO (identical to About / Contact / Disclaimer) ── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,0,0.13) 0%, transparent 70%),
+                  linear-gradient(180deg, #12151f 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6b00' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #0a0c12;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 5px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--heading);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 0 40px var(--glow);
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .content {
+      padding: 56px 0 80px;
+    }
+
+    .updated-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    /* ── PAGE GRID: sidebar TOC + article ── */
+    .policy-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    /* Sidebar */
+    .toc {
+      position: sticky;
+      top: 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+    }
+    .toc-title {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      counter-reset: toc-counter;
+    }
+    .toc li { counter-increment: toc-counter; }
+    .toc a {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 7px 8px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .toc a::before {
+      content: counter(toc-counter, decimal-leading-zero);
+      font-family: 'Orbitron', monospace;
+      font-size: 0.68rem;
+      color: var(--accent2);
+      flex-shrink: 0;
+    }
+    .toc a:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+    }
+
+    /* Mobile TOC (collapsible) */
+    .toc-mobile { display: none; }
+
+    /* Article */
+    article.policy {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .policy-section {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 24px;
+    }
+    .policy-section:first-child { padding-top: 0; }
+    .policy-section:last-child { border-bottom: none; }
+    .policy-section h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 14px;
+      padding-left: 14px;
+      border-left: 3px solid var(--accent);
+      line-height: 1.4;
+    }
+    .policy-section p {
+      color: var(--text);
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+    }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 12px 0 14px;
+    }
+    .policy-section ul li {
+      position: relative;
+      padding-left: 20px;
+      color: var(--text);
+      font-size: 0.96rem;
+    }
+    .policy-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent2);
+    }
+
+    /* Callout box for AdSense / important notices */
+    .callout {
+      background: linear-gradient(135deg, rgba(255,107,0,0.08) 0%, rgba(255,215,0,0.05) 100%);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 20px;
+      margin: 14px 0;
+    }
+    .callout p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--text);
+    }
+    .callout strong { color: var(--accent2); }
+    .callout a { color: var(--accent2); }
+
+    /* No-collect badge row */
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 4px;
+    }
+    .no-collect {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 6px 14px;
+    }
+    .no-collect svg { width: 13px; height: 13px; color: var(--accent2); flex-shrink: 0; }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      margin-top: 44px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+    }
+    .contact-card .section-label {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .contact-card h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.02rem, 2.6vw, 1.22rem);
+      color: var(--heading);
+      margin-bottom: 20px;
+    }
+    .contact-card .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .contact-card .info-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 180px;
+    }
+    .contact-card .info-label {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .contact-card .info-value a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .contact-card .info-value a:hover { text-decoration: underline; }
+
+    /* ── FINAL CTA STRIP (identical CTA style) ── */
+    .contact-strip {
+      background: linear-gradient(90deg, rgba(255,107,0,0.10), rgba(255,215,0,0.07));
+      border: 1px solid rgba(255,107,0,0.25);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      margin-top: 44px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .contact-strip h3 {
+      font-family: 'Orbitron', monospace;
+      font-size: 1rem;
+      color: var(--heading);
+      margin-bottom: 6px;
+    }
+    .contact-strip p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0;
+    }
+    .contact-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), #ff9a00);
+      color: #0a0c12;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 12px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.2s, transform 0.2s;
+      flex-shrink: 0;
+    }
+    .contact-btn:hover { opacity: 0.88; transform: scale(1.03); }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--accent2);
+      outline-offset: 2px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .policy-grid {
+        grid-template-columns: 1fr;
+      }
+      .toc { display: none; }
+      .toc-mobile {
+        display: block;
+        margin-bottom: 32px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .toc-mobile summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Orbitron', monospace;
+        font-size: 0.68rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+      .toc-mobile summary::-webkit-details-marker { display: none; }
+      .toc-mobile summary::after {
+        content: '+';
+        font-size: 1.1rem;
+        color: var(--muted);
+      }
+      .toc-mobile[open] summary::after { content: '–'; }
+      .toc-mobile .toc-body {
+        padding: 0 20px 18px;
+      }
+      .toc-mobile ol {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        counter-reset: toc-counter-m;
+      }
+      .toc-mobile li { counter-increment: toc-counter-m; }
+      .toc-mobile a {
+        display: flex;
+        gap: 10px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.88rem;
+        padding: 7px 4px;
+      }
+      .toc-mobile a::before {
+        content: counter(toc-counter-m, decimal-leading-zero);
+        font-family: 'Orbitron', monospace;
+        font-size: 0.68rem;
+        color: var(--accent2);
+        flex-shrink: 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .contact-strip { flex-direction: column; align-items: flex-start; }
+      .contact-card .info-row { gap: 20px; }
+    }
+  </style>
+
+
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-badge">Privacy Policy</div>
+  <h1>Your <span>Privacy</span> Matters</h1>
+  <p>Learn how FF Bio Code collects, uses, stores, and protects your information while you use our website.</p>
+</section>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<main class="content">
+  <div class="container">
+
+    <p class="updated-note">This Privacy Policy explains how FF Bio Code handles information when you visit ffbiocodes.com. By using our website, you agree to the practices described below.</p>
+
+    <!-- Mobile collapsible TOC -->
+    <details class="toc-mobile">
+      <summary>Jump to a Section</summary>
+      <div class="toc-body">
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#information-we-collect">Information We Collect</a></li>
+          <li><a href="#how-we-use-information">How We Use Information</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#google-adsense">Google AdSense</a></li>
+          <li><a href="#google-analytics">Google Analytics</a></li>
+          <li><a href="#third-party-services">Third-Party Services</a></li>
+          <li><a href="#external-links">External Links</a></li>
+          <li><a href="#data-security">Data Security</a></li>
+          <li><a href="#childrens-privacy">Children's Privacy</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#policy-changes">Changes to this Policy</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <div class="policy-grid">
+
+      <!-- Sidebar TOC (desktop) -->
+      <nav class="toc" aria-label="Privacy policy sections">
+        <div class="toc-title">On This Page</div>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#information-we-collect">Information We Collect</a></li>
+          <li><a href="#how-we-use-information">How We Use Information</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#google-adsense">Google AdSense</a></li>
+          <li><a href="#google-analytics">Google Analytics</a></li>
+          <li><a href="#third-party-services">Third-Party Services</a></li>
+          <li><a href="#external-links">External Links</a></li>
+          <li><a href="#data-security">Data Security</a></li>
+          <li><a href="#childrens-privacy">Children's Privacy</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#policy-changes">Changes to this Policy</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ol>
+      </nav>
+
+      <!-- Article -->
+      <article class="policy">
+
+        <section class="policy-section" id="introduction">
+          <h2>1. Introduction</h2>
+          <p>
+            FF Bio Code respects your privacy and is committed to protecting any personal information you share with us. This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your data.
+          </p>
+          <p>
+            By using ffbiocodes.com, browsing our pages, or using our Free Fire Bio Code Generator, you agree to the terms outlined in this Privacy Policy.
+          </p>
+        </section>
+
+        <section class="policy-section" id="information-we-collect">
+          <h2>2. Information We Collect</h2>
+          <p>We collect a limited amount of information to operate and improve our website, including:</p>
+          <ul>
+            <li>Information you voluntarily provide through our contact forms</li>
+            <li>Your email address, if you choose to submit one</li>
+            <li>Messages or enquiries sent through our contact forms</li>
+            <li>Anonymous analytics data about how visitors use the site</li>
+            <li>Device information, such as device type and screen size</li>
+            <li>Browser type and version</li>
+            <li>Operating system</li>
+            <li>IP address</li>
+            <li>Pages visited and time spent on the website</li>
+            <li>Date and time of each visit</li>
+          </ul>
+          <div class="badge-row">
+            <span class="no-collect">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              We never collect passwords
+            </span>
+            <span class="no-collect">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              We never collect Free Fire account credentials
+            </span>
+          </div>
+        </section>
+
+        <section class="policy-section" id="how-we-use-information">
+          <h2>3. How We Use Information</h2>
+          <p>The information we collect is used to:</p>
+          <ul>
+            <li>Respond to your questions, messages, and support requests</li>
+            <li>Improve website performance and page loading speed</li>
+            <li>Improve the overall user experience of FF Bio Code</li>
+            <li>Detect, prevent, and reduce spam or abusive activity</li>
+            <li>Analyze traffic patterns to understand how our tools are used</li>
+            <li>Maintain the security and stability of the website</li>
+          </ul>
+        </section>
+
+        <section class="policy-section" id="cookies">
+          <h2>4. Cookies</h2>
+          <p>
+            Cookies are small text files stored on your device by your web browser. They help websites remember your preferences and recognize returning visitors.
+          </p>
+          <p>
+            FF Bio Code uses cookies to help improve your browsing experience, remember basic preferences, and understand how our website is used. You are free to disable cookies at any time through your browser settings, though doing so may affect certain features of the site.
+          </p>
+        </section>
+
+        <section class="policy-section" id="google-adsense">
+          <h2>5. Google AdSense</h2>
+          <p>
+            FF Bio Code uses Google AdSense to display advertisements that help support the website. As part of this service:
+          </p>
+          <ul>
+            <li>Google may use cookies to serve ads based on your prior visits to this or other websites</li>
+            <li>Third-party vendors, including Google, use cookies to personalize advertising content</li>
+            <li>Ad personalization may be based on your browsing activity across the web</li>
+            <li>We do not control the cookies placed by Google or other third-party advertising networks</li>
+          </ul>
+          <div class="callout">
+            <p>
+              You can manage or opt out of personalized advertising at any time through <strong>Google's Ads Settings</strong>, available at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>. For more information on how Google uses data from advertising partners, you may also review Google's own privacy practices.
+            </p>
+          </div>
+        </section>
+
+        <section class="policy-section" id="google-analytics">
+          <h2>6. Google Analytics</h2>
+          <p>
+            We may use Google Analytics to collect anonymous usage data, such as page views, session duration, and general visitor behavior. This information helps us understand how people use FF Bio Code so we can continue improving our content and tools.
+          </p>
+          <p>
+            Data collected through Google Analytics is aggregated and anonymous. We do not sell any personally identifiable information to third parties.
+          </p>
+        </section>
+
+        <section class="policy-section" id="third-party-services">
+          <h2>7. Third-Party Services</h2>
+          <p>FF Bio Code works with a small number of trusted third-party services to operate the website, including:</p>
+          <ul>
+            <li>Google AdSense, for displaying advertisements</li>
+            <li>Google Analytics, for anonymous traffic and usage insights</li>
+            <li>Cloudflare, for website security and performance</li>
+            <li>Our hosting provider, for storing and serving website files</li>
+          </ul>
+          <p>
+            Each of these providers operates under its own privacy policy, and we encourage you to review their terms for a complete understanding of how they handle data.
+          </p>
+        </section>
+
+        <section class="policy-section" id="external-links">
+          <h2>8. External Links</h2>
+          <p>
+            Our website may contain links to third-party websites that are not owned or operated by FF Bio Code. We are not responsible for the privacy practices, content, or terms of any external site. We recommend reviewing the privacy policy of any third-party website you visit.
+          </p>
+        </section>
+
+        <section class="policy-section" id="data-security">
+          <h2>9. Data Security</h2>
+          <p>
+            We use reasonable administrative and technical measures to help protect the information you share with us. However, no method of transmission over the internet, or method of electronic storage, can be guaranteed to be 100% secure. While we strive to protect your data, we cannot guarantee its absolute security.
+          </p>
+        </section>
+
+        <section class="policy-section" id="childrens-privacy">
+          <h2>10. Children's Privacy</h2>
+          <p>
+            FF Bio Code is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If we become aware that a child under 13 has provided us with personal information, we will take steps to remove that information from our records.
+          </p>
+        </section>
+
+        <section class="policy-section" id="your-rights">
+          <h2>11. Your Rights</h2>
+          <p>You have certain rights regarding any personal information you have shared with us. You may:</p>
+          <ul>
+            <li>Request the deletion of personal information you have submitted to us</li>
+            <li>Contact us with any questions or concerns about how your data is handled</li>
+            <li>Request correction of any inaccurate or outdated information</li>
+          </ul>
+        </section>
+
+        <section class="policy-section" id="policy-changes">
+          <h2>12. Changes to this Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. Any updates will be posted on this page, and the revised version becomes effective immediately upon publication.
+          </p>
+        </section>
+
+        <section class="policy-section" id="contact-us">
+          <h2>13. Contact Us</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or how your information is handled, please reach out to us using the details below.
+          </p>
+        </section>
+
+      </article>
+    </div><!-- /policy-grid -->
+
+    <!-- Contact Card -->
+    <div class="contact-card">
+      <div class="section-label">Get In Touch</div>
+      <h2>Privacy Questions? Contact Us</h2>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-value"><a href="mailto:support@ffbiocodes.com">support@ffbiocodes.com</a></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Website</span>
+          <span class="info-value"><a href="https://ffbiocodes.com" target="_blank" rel="noopener">ffbiocodes.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="contact-strip">
+      <div>
+        <h3>Protecting Your Privacy Is Our Priority</h3>
+        <p>
+          Thank you for trusting FF Bio Code. We are committed to maintaining transparency, protecting your privacy, and providing a safe experience for every visitor.
+        </p>
+      </div>
+      <a class="contact-btn" href="/">Back to Home →</a>
+    </div>
+
+  </div><!-- /container -->
+</main>

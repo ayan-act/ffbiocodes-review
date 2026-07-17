@@ -1,0 +1,472 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer | FF Bio Code – Website Disclaimer &amp; Terms of Use</title>
+  <meta name="description" content="Read the FF Bio Code disclaimer. FF Bio Code is an independent fan-made website, not affiliated with or endorsed by Garena or Free Fire.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Disclaimer | FF Bio Code">
+  <meta property="og:description" content="Important information about FF Bio Code's independent status, trademarks, accuracy of content, and use of our Free Fire bio code tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ffbiocodes.com/disclaimer/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Please read this disclaimer carefully before using FF Bio Code's tools, bio codes, and resources.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:        #1a1b26;
+      --surface:   #1a1b26;
+      --card:      #1a1b26;
+      --border:    #252b3e;
+      --accent:    #6A79B8;
+      --accent2:   #9A7DD1;
+      --glow:      #5b6cb3;
+      --text:      #e8eaf0;
+      --muted:     #8a90a8;
+      --heading:   #ffffff;
+      --radius:    14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* ── HERO (identical to About / Contact) ── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,0,0.13) 0%, transparent 70%),
+                  linear-gradient(180deg, #12151f 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6b00' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #0a0c12;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 5px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--heading);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 0 40px var(--glow);
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .content {
+      padding: 64px 0 80px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── INTRO STRIP ── */
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: linear-gradient(135deg, rgba(255,107,0,0.08) 0%, rgba(255,215,0,0.05) 100%);
+      border: 1px solid rgba(255,107,0,0.2);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin-bottom: 56px;
+      animation: fadeUp 0.6s ease both;
+    }
+    .intro-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      color: var(--accent);
+    }
+    .intro-icon svg { width: 100%; height: 100%; }
+    .intro p {
+      color: var(--text);
+      font-size: 0.96rem;
+      margin: 0;
+    }
+    .intro strong { color: var(--accent2); }
+
+    /* ── CLAUSE LIST (fresh layout) ── */
+    .clauses {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .clause {
+      position: relative;
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 26px;
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      animation: fadeUp 0.6s ease both;
+    }
+    .clause:last-child { border-bottom: 1px solid var(--border); }
+    .clause-num {
+      font-family: 'Orbitron', monospace;
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--accent);
+      opacity: 0.55;
+    }
+    .clause-body h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1rem, 2.6vw, 1.25rem);
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    .clause-body p {
+      color: var(--text);
+      margin-bottom: 10px;
+      font-size: 0.97rem;
+    }
+    .clause-body p:last-child { margin-bottom: 0; }
+    .clause-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin: 14px 0 4px;
+    }
+    .clause-body ul li {
+      position: relative;
+      padding-left: 22px;
+      color: var(--text);
+      font-size: 0.96rem;
+    }
+    .clause-body ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: var(--accent2);
+      transform: rotate(45deg);
+    }
+    .clause-tag {
+      display: inline-block;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 620px) {
+      .clause {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 26px 0;
+      }
+      .clause-num {
+        font-size: 1.8rem;
+        opacity: 0.4;
+      }
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      margin-top: 56px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      text-align: center;
+      animation: fadeUp 0.6s ease both;
+    }
+    .contact-card .section-label {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .contact-card h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.05rem, 2.8vw, 1.3rem);
+      color: var(--heading);
+      margin-bottom: 22px;
+    }
+    .contact-card .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 34px;
+    }
+    .contact-card .info-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 180px;
+    }
+    .contact-card .info-label {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .contact-card .info-value a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .contact-card .info-value a:hover { text-decoration: underline; }
+
+    /* ── CONTACT STRIP (identical CTA style) ── */
+    .contact-strip {
+      background: linear-gradient(90deg, rgba(255,107,0,0.10), rgba(255,215,0,0.07));
+      border: 1px solid rgba(255,107,0,0.25);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      margin-top: 52px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .contact-strip h3 {
+      font-family: 'Orbitron', monospace;
+      font-size: 1rem;
+      color: var(--heading);
+      margin-bottom: 6px;
+    }
+    .contact-strip p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0;
+    }
+    .contact-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), #ff9a00);
+      color: #0a0c12;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 12px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.2s, transform 0.2s;
+      flex-shrink: 0;
+    }
+    .contact-btn:hover { opacity: 0.88; transform: scale(1.03); }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent2);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 560px) {
+      .contact-strip { flex-direction: column; align-items: flex-start; }
+      .contact-card .info-row { gap: 22px; }
+    }
+  </style>
+
+
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-badge">Disclaimer</div>
+  <h1>Website <span>Disclaimer</span></h1>
+  <p>Please read this disclaimer carefully before using FF Bio Code and its tools, content, and resources.</p>
+</section>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<main class="content">
+  <div class="container">
+
+    <div class="intro">
+      <div class="intro-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+      </div>
+      <p>
+        This page outlines important terms regarding your use of <strong>FF Bio Code</strong>. By browsing this website or using our Free Fire Bio Code Generator, you agree to the points explained below.
+      </p>
+    </div>
+
+    <div class="clauses">
+
+      <article class="clause">
+        <div class="clause-num">01</div>
+        <div class="clause-body">
+          <span class="clause-tag">Purpose</span>
+          <h2>General Disclaimer</h2>
+          <p>
+            FF Bio Code is created purely for informational and educational purposes. The bio codes, colour codes, symbols, and fonts featured on this website are meant to help Free Fire players personalise their in-game profiles. Nothing on this site should be interpreted as official guidance from the game developer or publisher.
+          </p>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">02</div>
+        <div class="clause-body">
+          <span class="clause-tag">Ownership</span>
+          <h2>Independent Fan Website</h2>
+          <p>FF Bio Code is an independent, fan-made website built by players, for players. To be clear:</p>
+          <ul>
+            <li>FF Bio Code is <strong>not</strong> an official Garena product.</li>
+            <li>We are <strong>not affiliated with Garena</strong> in any way.</li>
+            <li>We are <strong>not affiliated with Free Fire</strong> or its parent companies.</li>
+            <li>We are <strong>not endorsed, sponsored, or approved by Garena</strong>.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">03</div>
+        <div class="clause-body">
+          <span class="clause-tag">Intellectual Property</span>
+          <h2>Trademark Notice</h2>
+          <p>
+            Free Fire, Garena, and all related logos, images, names, and trademarks are the property of their respective owners. Their use on this website is limited to identification and descriptive reference only, and does not imply any form of ownership, partnership, or affiliation.
+          </p>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">04</div>
+        <div class="clause-body">
+          <span class="clause-tag">Reliability</span>
+          <h2>Accuracy of Information</h2>
+          <p>
+            We work hard to keep the content on FF Bio Code accurate and up to date. However, since Free Fire is regularly updated by its developers, we cannot guarantee the:
+          </p>
+          <ul>
+            <li>Complete accuracy of every bio code or colour code listed</li>
+            <li>Completeness of our collections at all times</li>
+            <li>Uninterrupted reliability of the website or generator tool</li>
+            <li>Constant availability of the website without downtime</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">05</div>
+        <div class="clause-body">
+          <span class="clause-tag">Tools</span>
+          <h2>Bio Code &amp; Tool Disclaimer</h2>
+          <p>
+            Our Free Fire Bio Code Generator and bio code collections are provided purely for convenience and creative use. Formatting inside Free Fire can change with game updates, so users should always double-check that a bio code or colour code still displays correctly on the latest version of the game before relying on it.
+          </p>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">06</div>
+        <div class="clause-body">
+          <span class="clause-tag">Third Parties</span>
+          <h2>External Links</h2>
+          <p>
+            Our website may contain links to third-party websites, tools, or resources that are not owned or controlled by FF Bio Code. We have no control over, and assume no responsibility for, the content, privacy practices, products, or services of any third-party sites. Visiting external links is entirely at your own discretion.
+          </p>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">07</div>
+        <div class="clause-body">
+          <span class="clause-tag">Liability</span>
+          <h2>Limitation of Liability</h2>
+          <p>
+            You use FF Bio Code entirely at your own risk. Under no circumstances shall FF Bio Code, its team, or its affiliates be held liable for any direct, indirect, incidental, or consequential damages arising from the use of, or inability to use, this website, its content, or its tools.
+          </p>
+        </div>
+      </article>
+
+      <article class="clause">
+        <div class="clause-num">08</div>
+        <div class="clause-body">
+          <span class="clause-tag">Updates</span>
+          <h2>Changes to this Disclaimer</h2>
+          <p>
+            We may revise or update this Disclaimer at any time without prior notice, to reflect changes in our website, tools, or applicable practices. We encourage you to review this page periodically to stay informed of any changes.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Contact Card -->
+    <div class="contact-card">
+      <div class="section-label">Questions About This Disclaimer</div>
+      <h2>Contact Us</h2>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-value"><a href="mailto:support@ffbiocodes.com">support@ffbiocodes.com</a></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Website</span>
+          <span class="info-value"><a href="https://ffbiocodes.com" target="_blank" rel="noopener">ffbiocodes.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="contact-strip">
+      <div>
+        <h3>Thank You for Visiting FF Bio Code</h3>
+        <p>
+          We appreciate your trust in our platform. Please use our website responsibly and review this disclaimer whenever necessary.
+        </p>
+      </div>
+      <a class="contact-btn" href="/">Back to Home →</a>
+    </div>
+
+  </div><!-- /container -->
+</main>
